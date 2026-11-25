@@ -1,0 +1,10 @@
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:.3s}
+.nav.scrolled{background:rgba(11,18,32,.92);backdrop-filter:blur(10px);box-shadow:0 2px 20px #0006}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:800;font-size:1.5rem;color:#fff}.brand span{color:var(--accent)}
+nav{display:flex;gap:1.6rem}nav a{color:#cbd5e1;font-size:.95rem;font-weight:500}nav a:hover{color:var(--accent)}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
+footer{padding:2rem 0;text-align:center;color:var(--muted);border-top:1px solid var(--line);font-size:.9rem}
+@media(max-width:760px){.burger{display:block}
+nav{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;background:#0b1220;padding:1rem 1.5rem;gap:1rem}
+nav.open{display:flex}}
