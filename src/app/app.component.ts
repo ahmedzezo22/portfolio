@@ -20,5 +20,10 @@ export class AppComponent {
   scrolled = false;
   links = [['about','About'],['experience','Experience'],['projects','Projects'],['skills','Skills'],['education','Education'],['contact','Contact']];
   year = new Date().getFullYear();
+  go(id: string) {
+    this.open = false;
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    history.replaceState(null, '', '#' + id);
+  }
   @HostListener('window:scroll') onScroll() { this.scrolled = window.scrollY > 20; }
 }
