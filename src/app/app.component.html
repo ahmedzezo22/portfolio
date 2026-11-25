@@ -1,9 +1,9 @@
 <header class="nav" [class.scrolled]="scrolled || open">
   <div class="container nav-in">
-    <a href="#top" class="brand">AM<span>.</span></a>
+    <a href="#top" class="brand" (click)="$event.preventDefault(); go('top')">AM<span>.</span></a>
     <button class="burger" (click)="open=!open" aria-label="Menu">☰</button>
     <nav [class.open]="open">
-      @for (l of links; track l[0]) { <a [href]="'#'+l[0]" (click)="open=false">{{l[1]}}</a> }
+      @for (l of links; track l[0]) { <a [href]="'#'+l[0]" (click)="$event.preventDefault(); go(l[0])">{{l[1]}}</a> }
     </nav>
   </div>
 </header>
