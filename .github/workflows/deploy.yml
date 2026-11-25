@@ -20,6 +20,7 @@ jobs:
           node-version: 22
       - name: Restore binary assets (stored as base64 text)
         run: |
+          mkdir -p public
           base64 -d assets-b64/ahmed-1.jpg.b64 > public/ahmed-1.jpg
           base64 -d assets-b64/favicon.ico.b64 > public/favicon.ico
       - run: npm install
