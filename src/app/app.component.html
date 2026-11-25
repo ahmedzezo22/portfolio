@@ -1,0 +1,13 @@
+<header class="nav" [class.scrolled]="scrolled || open">
+  <div class="container nav-in">
+    <a href="#top" class="brand">AM<span>.</span></a>
+    <button class="burger" (click)="open=!open" aria-label="Menu">☰</button>
+    <nav [class.open]="open">
+      @for (l of links; track l[0]) { <a [href]="'#'+l[0]" (click)="open=false">{{l[1]}}</a> }
+    </nav>
+  </div>
+</header>
+<main id="top">
+  <app-hero /><app-about /><app-experience /><app-projects /><app-skills /><app-education /><app-contact />
+</main>
+<footer><div class="container">© {{year}} {{p.name}}. Built with Angular.</div></footer>
