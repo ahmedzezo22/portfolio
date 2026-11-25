@@ -53,7 +53,7 @@ export const PROJECTS = [
 
 export const SKILLS = [
   { group: 'Frontend', items: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'jQuery', 'Angular 2+ (latest version)', 'AngularJS', 'Knockout.js'] },
-  { group: 'Backend & Languages', items: ['C#', 'ASP.NET Core MVC & Web API', 'ADO.NET', 'Node.js', 'PHP', 'C/C++'] },
+  { group: 'Backend & Languages', items: ['C#', 'ASP.NET Core MVC & Web API', 'ABP Framework', 'ADO.NET', 'Node.js', 'PHP', 'C/C++'] },
   { group: 'Databases', items: ['SQL Server', 'MySQL', 'MongoDB', 'Entity Framework', 'LINQ to SQL'] },
   { group: 'Architecture & DevOps', items: ['Microservices (Event-driven, API Gateway, Service Registry)', 'Domain-Driven Design (DDD)', 'Docker (Dockerfile, Compose, Deployment)', 'Git, GitHub, TFS'] },
   { group: 'Other', items: ['Design Patterns', 'Problem Solving', 'Data Structures', 'Microsoft Office Suite'] },
